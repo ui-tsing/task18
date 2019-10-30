@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+# HTML Abstraction Markup Language
+gem 'haml', '~> 5.1', '>= 5.1.2'
+gem 'haml-rails', '~> 2.0', '>= 2.0.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 # Use postgresql as the database for Active Record

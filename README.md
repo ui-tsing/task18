@@ -1,16 +1,22 @@
 # Task18 readme file
 ## Model架構
-### User
+### user
+* id:integer
 * username:string
 * password_digest:password
 * role:integer
-### Task
+### task
+* id:integer
 * name:string
 * priority:integer
 * status:string
 * begintime:datetime
 * endtime:datetime
-* user:references
-* tag:references
-### Tag
+* use_id:integer
+### task_tag
+* Id:integer
+* task_id:integer
+* tag_id:integer
+### tag
+* id:integer
 * name:string
