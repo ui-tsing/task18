@@ -8,9 +8,9 @@
 * name:string
 * priority:integer
 * status:string
-* begintime:time
-* endtime:time
+* begintime:datetime
+* endtime:datetime
 * user:references
-* task:references
+* tag:references
 ### Tag
 * name:string
