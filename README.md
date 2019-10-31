@@ -9,9 +9,9 @@
 * id:integer
 * name:string
 * priority:integer
-* status:string
-* begintime:datetime
-* endtime:datetime
+* status:integer
+* begin_at_:datetime
+* end_at_:datetime
 * use_id:integer
 ### task_tag
 * Id:integer
