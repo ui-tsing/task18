@@ -12,9 +12,9 @@
 * status:integer
 * begin_at:datetime
 * end_at:datetime
-* use_id:integer
+* user_id:integer
 ### task_tag
-* Id:integer
+* id:integer
 * task_id:integer
 * tag_id:integer
 ### tag
