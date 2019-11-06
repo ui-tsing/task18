@@ -1,24 +1,22 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Task18 readme file
+## Model架構
+### user
+* id:integer
+* username:string
+* password_digest:password
+* role:integer
+### task
+* id:integer
+* name:string
+* priority:integer
+* status:integer
+* begin_at:datetime
+* end_at:datetime
+* user_id:integer
+### task_tag
+* id:integer
+* task_id:integer
+* tag_id:integer
+### tag
+* id:integer
+* name:string
