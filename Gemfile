@@ -23,8 +23,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # use haml instead of erb
-gem 'haml', '~> 5.1', '>= 5.1.2'
-gem 'haml-rails', '~> 2.0', '>= 2.0.1'
+# gem 'haml', '~> 5.1', '>= 5.1.2'
+# gem 'haml-rails', '~> 2.0', '>= 2.0.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
