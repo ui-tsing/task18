@@ -1,0 +1,21 @@
+<h1>Hello Task18</h1>
+<h1>Current Tasks</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <%= task.name %>
+    </li>
+    <li>
+      <%= task.begin_at %>
+    </li>
+    <li>
+      <%= task.end_at %>
+    </li>
+    <li>
+      <%= task.priority %>
+    </li>
+    <li>
+      <%= task.status %>
+    </li>
+  <% end %>
+</ul>
