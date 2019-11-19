@@ -10,36 +10,36 @@ class TasksController < ApplicationController
   def create
     @task = Task.new(task_params)
     if @task.save
-      redirect_to tasks_path
+      redirect_to tasks_path, notice: "'#{@task.name}'have been created."
     else
       render :index
     end
   end
 
   def edit
-    @task = Task.find_by(params[:id])
+    @task = Task.find(params[:id])
   end
 
   def update
-    @task = Task.find_by(params[:id])
+    @task = Task.find(params[:id])
     if @task.update(task_params)
-      redirect_to tasks_path
+      redirect_to tasks_path, notice: 'Successfully updated.'
     else
       render :edit
     end
   end
 
   def destroy
-    @task = Task.find_by(params[:id])
+    @task = Task.find(params[:id])
     @task.destroy
-    redirect_to tasks_path
+    redirect_to tasks_path, notice: 'A task have benn deleted.'
   end
 
 
   private
 
   def task_params
-    params.include(:task).permit(:name, :priority, :status, :begin_at, :end_at)
+    params.require(:task).permit(:name, :priority, :status, :begin_at, :end_at)
   end
 
 end
