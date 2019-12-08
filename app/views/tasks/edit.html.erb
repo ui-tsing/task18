@@ -1,0 +1,11 @@
+<%= form_with model: @task do |f| %>
+  <%= f.label :name, 'Task:' %>
+  <%= f.text_field :name %>
+  <%= f.label :priority, 'Priority:' %>
+  <%= f.select(:priority, %w(low mid high)) %>
+  <%= f.label :begin_at, 'Begin at:' %>
+  <%= f.datetime_field :begin_at %>
+  <%= f.label :end_at, 'End at:' %>
+  <%= f.datetime_field :end_at %>
+  <%= f.submit %>
+<% end %>

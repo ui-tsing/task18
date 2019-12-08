@@ -23,8 +23,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # use haml instead of erb
-gem 'haml', '~> 5.1', '>= 5.1.2'
-gem 'haml-rails', '~> 2.0', '>= 2.0.1'
+# gem 'haml', '~> 5.1', '>= 5.1.2'
+# gem 'haml-rails', '~> 2.0', '>= 2.0.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -35,6 +35,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Use 4.0.0beta3 to avoid issue at Rails6
+  gem 'rspec-rails', '~> 4.0.0.beta3'
 end
 
 group :development do

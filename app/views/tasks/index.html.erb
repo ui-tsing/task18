@@ -1,0 +1,14 @@
+<h1>Hello Task18</h1>
+<h1>Current Tasks</h1>
+<%= link_to 'New Task', new_task_path %>
+<% @tasks.each do |task| %>
+  <ul>
+    <li>Name: <%= task.name %> </li>
+    <li>Begin: <%= task.begin_at %> </li>
+    <li>End: <%= task.end_at %> </li>
+    <li>Priority: <%= task.priority %> </li>
+    <li>Status: <%= task.status %> </li>
+    <%= link_to 'Edit Task', edit_task_path(task.id) %>
+    <%= link_to 'Delete Task', task_path(task.id), method: 'Delete' %>
+  </ul>
+<% end %>
